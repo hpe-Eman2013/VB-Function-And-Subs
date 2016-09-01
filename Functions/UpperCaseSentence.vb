@@ -1,5 +1,4 @@
-Public Function UppercaseSentence(ByVal val As String) As String _
-	Implements IApplicationLogin.UppercaseSentence
+Public Function UppercaseSentence(ByVal val As String) As String
 	If String.IsNullOrEmpty(val) Then
 		Return val
 	End If

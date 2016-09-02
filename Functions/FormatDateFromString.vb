@@ -94,6 +94,14 @@ Public Function FormatDateFromString(dateString As String, _
                 first = longString.Substring(0, 1)
                 second = longString.Substring(1, 1)
                 third = longString.Substring(2)
+            Case 5
+                first = longString.Substring(0, 1)
+                second = longString.Substring(1, 2)
+                third = Year(Now).ToString.Substring(0, 2) & longString.Substring(3)
+            Case 4
+                first = longString.Substring(0, 1)
+                second = longString.Substring(1, 1)
+                third = Year(Now).ToString.Substring(0, 2) & longString.Substring(2)
             Case Else
                 Return longString
         End Select
